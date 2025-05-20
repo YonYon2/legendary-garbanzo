@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cursor",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_erm",
+  "eventList":[],
   "managed":true,
-  "name":"obj_cursor",
+  "name":"obj_erm",
   "overriddenProperties":[],
   "parent":{
-    "name":"troop_sim",
-    "path":"troop_sim.yyp",
+    "name":"chars",
+    "path":"folders/chars.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_char",
+    "path":"objects/obj_char/obj_char.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cursor",
-    "path":"sprites/spr_cursor/spr_cursor.yy",
+    "name":"spr_erm",
+    "path":"sprites/spr_erm/spr_erm.yy",
   },
   "spriteMaskId":null,
   "visible":true,

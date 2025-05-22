@@ -1,0 +1,1 @@
+/// @description Attack nearest enemy

@@ -13,6 +13,15 @@ if (m_up || m_down) {
 if (mouse_check_button_pressed(mb_left) && type > 0) {
 	var char = (type == 0) ? undefined : global.chars[type-1];
 	var side = mouse_x > room_width/2;
-	if !is_undefined(char)
-		instance_create_layer(x,y,layer,char,{ side });
+	if !is_undefined(char) {
+		var new_guy = instance_create_layer(x,y,layer,char,{ side });
+		show_debug_message($"new guy was {new_guy}")
+	}
+}
+
+if (mouse_check_button_released(mb_right)) {
+	var inst = instance_place(x,y,obj_char);
+	if inst {
+		instance_destroy(inst);
+	}
 }

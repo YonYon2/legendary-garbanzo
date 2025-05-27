@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-hp = 2;
-max_hp = 2;
-size = 1;
+size = 8;
+max_hp = 10;
+hp = max_hp;
+spd = 0.5;
+reach = 0.25;

@@ -10,7 +10,7 @@ if (m_up || m_down) {
 	sprite_index = (type == 0) ? spr_cursor : object_get_sprite(global.chars[type-1]);
 }
 
-if (mouse_check_button_pressed(mb_left) && type > 0) {
+if (mouse_check_button_pressed(mb_left) && type > 0 && !position_meeting(x,y,obj_play)) {
 	var char = (type == 0) ? undefined : global.chars[type-1];
 	var side = mouse_x > room_width/2;
 	if !is_undefined(char) {

@@ -20,6 +20,7 @@ if (!is_undefined(close_inst) && instance_exists(close_inst)) {
 	speed = spd*in_range;
 } else speed = 0;
 
-if in_range && alarm[0] == -1 {
+if !in_range && alarm[0] == -1 {
+	target = close_inst ?? noone;
 	alarm[0] = aspd*global.fps_set;
 }
